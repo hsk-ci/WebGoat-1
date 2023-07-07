@@ -1,4 +1,6 @@
 .cifuzz-build/
+.cifuzz-findings/
+/src/test/resources/org/
 /nb-configuration.xml
 /nbactions.xml
 /target/
