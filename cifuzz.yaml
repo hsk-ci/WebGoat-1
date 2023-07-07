@@ -43,7 +43,7 @@
 #server: https://app.code-intelligence.com
 
 ## Set the project name on the CI App.
-#project: my-project-1a2b3c4d
+project: Webgoat-1-9bd9bbb8
 
 ## Style for CI Fuzz.
 #style: plain
