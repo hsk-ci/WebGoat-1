@@ -22,7 +22,7 @@ class MyClassFuzzTest1 {
     UserForm userForm = new UserForm();
     userForm.setAgree("true");
 
-    String pwd = data.consumeString(100);
+    String pwd = data.consumeRemainingAsString();
 
     userForm.setUsername(pwd);
     userForm.setPassword(pwd);
@@ -35,7 +35,7 @@ class MyClassFuzzTest1 {
 
   @FuzzTest
   void throwErrorTest(FuzzedDataProvider data) {
-    String pwd = data.consumeString(100);
+    String pwd = data.consumeRemainingAsString();
     if (pwd.startsWith("t")) {
       throw new NullPointerException();
     }
